@@ -6,23 +6,9 @@ import ErrorBoundries from '../components/ErrorBoundries'
 import './App.css';
 
 function App () {
-	// constructor(){
-	// 	super()
-	// 	this.state = {
-	// 		robots: [],
-	// 		searchfield: ''
-	// 	}
-	// }
-
+	
 	const [robots, setRobots] = useState([])
 	const [searchfield, setSearchfield] = useState('')
-
-	// componentDidMount(){
-	// 	fetch('https://jsonplaceholder.typicode.com/users').then(response => {
-	// 		return response.json();
-	// 	}).then(users => {this.setState({ robots: users })});
-		
-	// }
 
 	useEffect(()=> {
 		fetch('https://jsonplaceholder.typicode.com/users')
